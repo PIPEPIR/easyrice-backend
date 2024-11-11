@@ -35,4 +35,7 @@ export class History {
 
   @Column({ type: 'simple-json' })
   standardData: [Standard];
+
+  @Column({ nullable: true })
+  updatedAt: string;
 }

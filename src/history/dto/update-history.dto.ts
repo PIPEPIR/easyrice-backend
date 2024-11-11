@@ -28,4 +28,7 @@ export class UpdateHistoryDto extends PartialType(CreateHistoryDto) {
   @IsOptional()
   @IsArray()
   samplingPoint?: string[];
+
+  @IsDateString()
+  updatedAt?: string;
 }
